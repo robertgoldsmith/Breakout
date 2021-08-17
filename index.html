@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  
+  <title>Breakout</title>
+</head>
+<body>
+  
+  <img id="info-btn" class="rules-btn" src="assets/info.svg"/>
+  
+  <div id="info-panel">
+    <div class="info-text">
+      <img id="close-btn" src="assets/x.svg"/>
+      <p>Use the right and left arrow keys to move the paddle to bounce the ball up and brake the blocks.</p>
+      <p>If you miss the ball, the blocks will reset.</p>
+    </div>
+    
+  </div>
+  
+  <div class="container">
+    <header>
+      <div>
+        <h1>BREAKOUT</h1>
+      </div>
+      <div>
+        <p>Score: <span id="score-display">0</span></p>
+      </div>
+    </header>
+  
+    <div class="canvas-wrapper">
+      <div class="loading-circle"></div>
+    </div>
+    
+    <button id="start-btn">start</button>
+  </div>
+  
+  
+  <script src="https://unpkg.com/vb-canvas/dist/vb-canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
